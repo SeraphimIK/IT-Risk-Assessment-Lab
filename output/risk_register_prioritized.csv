@@ -1,0 +1,11 @@
+asset_id,asset_name,category,threat,vulnerability,likelihood,impact,risk_score,risk_rating,existing_control
+A001,Domain Controller,Server,Unauthorized access,Weak password policy (no complexity/expiration enforced),4,5,20,High,Basic Active Directory password policy (not enforced for complexity)
+A003,File Server (Finance Share),Server,Data exfiltration,Overly broad user access permissions (excess privilege),3,5,15,High,Manual quarterly access review
+A008,VPN Gateway,Network,Credential stuffing,No multi-factor authentication (MFA) required,3,5,15,High,Single-factor password authentication
+A002,Employee Workstations,Endpoint,Malware infection,No endpoint detection and response (EDR) installed,4,3,12,Medium,Signature-based antivirus only
+A004,Guest Wi-Fi Network,Network,Network intrusion,Guest network not segmented from internal network,3,4,12,Medium,Guest network password rotated monthly
+A005,Employee Laptops (Remote),Endpoint,Device theft/loss,No full-disk encryption enforced,3,4,12,Medium,Device passcode required
+A010,Employee Onboarding Process,Process,Excess access granted,No formal access request/approval workflow,4,3,12,Medium,Manager verbal approval only
+A006,Customer Database,Database,SQL injection,Web application does not sanitize all user input fields,2,5,10,Medium,Web application firewall (partial coverage)
+A007,Cloud Storage (Backup),Cloud,Misconfigured access,Storage bucket permissions not regularly audited,2,4,8,Medium,Access restricted to IT admin group
+A009,Print Server,Server,Outdated software,Operating system missing security patches (90+ days behind),3,2,6,Low,Patch management process exists but inconsistent
