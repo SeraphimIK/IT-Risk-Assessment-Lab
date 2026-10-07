@@ -33,11 +33,15 @@ IT-Risk-Assessment-Lab/
 │   ├── Risk_Assessment_Report.md      # Written findings report
 │   └── Risk_Control_Matrix.md         # Risk -> control gap -> recommendation -> NIST CSF mapping
 │
-├── src/
-│   └── risk_assessment.py             # Scores risk, outputs register + chart
-│
-└── screenshots/                       # Screenshots of output for portfolio/GitHub display
+└── src/
+    └── risk_assessment.py             # Scores risk, outputs register + chart
 ```
+
+## Sample output
+
+Risk summary chart produced by `src/risk_assessment.py`:
+
+![Risk summary chart](output/risk_summary_chart.png)
 
 ## Risk scoring model
 ```
